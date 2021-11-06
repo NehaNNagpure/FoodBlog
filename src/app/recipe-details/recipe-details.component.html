@@ -1,0 +1,14 @@
+
+<mat-card class="example-card">
+    <mat-card-header  *ngFor="let details of selectRecipe">
+
+
+        {{details.name}}
+        {{details.ChefName}}
+        
+        {{details.Content}}
+        <img mat-card-image src="{{details.path}}">
+
+
+    </mat-card-header>
+</mat-card>

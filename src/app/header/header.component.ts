@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {MatToolbarModule} from '@angular/material/toolbar';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router, ParamMap } from '@angular/router';
+
 
 @Component({
   selector: 'app-header',
@@ -14,21 +15,22 @@ export class HeaderComponent implements OnInit {
     this.navLinks = [
         {
             label: 'Recipe',
-            link: './Recipe',
+            link: './recipe',
             index: 0
         }, {
             label: 'MyAccount',
-            link: './Recipe',
+            link: './recipe',
             index: 1
         }
+        
     ];
 }
-// ngOnInit(): void {
-//   this.router.events.subscribe((res) => {
-//       this.activeLinkIndex = this.navLinks.indexOf(this.navLinks.find(tab => tab.link === '.' + this.router.url));
-//   });
+
+
+
 
 ngOnInit(): void {
+ 
 }
 
 }

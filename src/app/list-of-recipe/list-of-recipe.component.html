@@ -1,6 +1,6 @@
-<mat-selection-list #Recipe [multiple]="false">
-    <mat-list-option *ngFor="let m of name" [value]="m">
-      {{m}}
-    </mat-list-option>
-  </mat-selection-list>
-  
+<mat-nav-list>
+
+	<a mat-list-item *ngFor="let recipe of recipeList" [routerLink]="['/recipeDetail',recipe.id]">
+		<span matLine>{{recipe.label}}</span>  
+	</a>
+</mat-nav-list>

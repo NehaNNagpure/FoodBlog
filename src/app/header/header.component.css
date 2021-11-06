@@ -1,32 +1,15 @@
-a.active{
+h3{
     text-align: right;
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
+    float:right;
+    color:whitesmoke;
 
 }
-a.active1{
-    text-align: right;
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
+div{
+    background-color: teal;
+    padding-right: 40px;
+    padding-top: 20px;
+    
 }
-h6.active2{
-    text-align: center;
-    background-color: inherit;
-    float: center;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
+a{
+    color:whitesmoke;
 }

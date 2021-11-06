@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute ,Router,ParamMap} from '@angular/router';
 
 @Component({
   selector: 'app-list-of-recipe',
@@ -7,10 +8,51 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListOfRecipeComponent implements OnInit {
   name: string[] = ['Paneer', 'Dal Rice', 'Gulab Jamun', 'Chakali', 'Chivada'];
+  public selectid:any;
+  recipeList=[{
+    label :'Paneer',
+    id :1
+  },
+  {
+    label :'Dal',
+    id :2
+  },
+  {
+    label :'Rice',
+    id :3
+  },
+  {
+    label :'Chapati',
+    id :4
+  },
+  {
+    label :'Sweet',
+    id :5
+  }
 
-  constructor() { }
+
+]
+
+  constructor(private route:ActivatedRoute,private router:Router) { }
 
   ngOnInit(): void {
+    this.route.paramMap.subscribe((params:ParamMap)=>{
+
+      let id=parseInt(params.get('id')|| '{}');
+      console.log(id);
+      this.selectid=id;
+      
+    });
+
+  }
+  onSelect(recipe:any)
+  {
+    this.router.navigate([recipe.id],{relativeTo:this.route});
+
+  }
+  isSelected(recipe:any)
+  {
+     return recipe.id === this.selectid;
   }
 
 }

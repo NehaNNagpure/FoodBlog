@@ -8,6 +8,8 @@ import { ListOfRecipeComponent } from './list-of-recipe/list-of-recipe.component
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatListModule } from '@angular/material/list';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatCardModule} from '@angular/material/card';
+import { RecipeDetailsComponent } from './recipe-details/recipe-details.component';
 
 
 
@@ -15,7 +17,8 @@ import {MatTabsModule} from '@angular/material/tabs';
   declarations: [
     AppComponent,
     HeaderComponent,
-    ListOfRecipeComponent
+    ListOfRecipeComponent,
+    RecipeDetailsComponent
   ],
 
   imports: [
@@ -25,6 +28,7 @@ import {MatTabsModule} from '@angular/material/tabs';
     BrowserAnimationsModule,
     MatListModule,
     MatTabsModule,
+    MatCardModule,
     
   ],
   providers: [],

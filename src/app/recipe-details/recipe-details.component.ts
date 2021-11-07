@@ -12,23 +12,24 @@ export class RecipeDetailsComponent implements OnInit {
   public recipeid:any;
 
 public recipes=[{
-  name:'name of chef',
+  name:'Paneer',
   id:1,
   ChefName:'Ranveer',
-  Content:"eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
-  path:"assets/images/Chef_Ranveer_Brar.jpg"
+  Content:"Paneer butter masala also known as butter paneer is a rich & creamy curry made with paneer, spices, onions, tomatoes, cashews and butter",
+  path:"assets/images/paneer-butter-masala-5-500x375.jpg"
+
 },{
   name:'Dal',
   id:2,
   ChefName:'Ranveer',
-  Content:"eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
-  path:"assets/images/Dal-Fry-Marathi.jpg"
+  Content:"Dal Fry is a spicy punjabi dish made from mixed dals like toor, chana, moong, masoor dal or just with chana and toor dal",
+   path:"assets/images/Dal-Fry-Marathi.jpg"
 },{
-name:'Dal',
+name:'Jeera Rice',
   id:3,
   ChefName:'Ranveer',
-  Content:"eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
-  path:"assets/images/dal-makhani-recipe-1.jpg"
+  Content:"Jeera rice or Zeera rice is an Indian dish consisting of rice and cumin seeds.It is a popular dish in North India.",
+  path:"assets/images/Jeera-Rice.jpg"
 },{
   name:'Dal',
     id:4,
@@ -43,7 +44,7 @@ name:'Dal',
       path:"assets/images/simpledal.jpg"
     },{
       name:'Paneer',
-        id:6,
+        id:1,
         ChefName:'Ranveer',
         Content:"eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
         path:"assets/images/paneer-butter-masala-5-500x375.jpg"

@@ -10,15 +10,15 @@ export class ListOfRecipeComponent implements OnInit {
   name: string[] = ['Paneer', 'Dal Rice', 'Gulab Jamun', 'Chakali', 'Chivada'];
   public selectid:any;
   recipeList=[{
-    label :'Paneer',
+    label :'Butter Paneer',
     id :1
   },
   {
-    label :'Dal',
+    label :'Dal Tadka',
     id :2
   },
   {
-    label :'Rice',
+    label :'Jeera Rice',
     id :3
   },
   {
@@ -26,7 +26,7 @@ export class ListOfRecipeComponent implements OnInit {
     id :4
   },
   {
-    label :'Sweet',
+    label :'Gulab Jam',
     id :5
   }
 

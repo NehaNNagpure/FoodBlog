@@ -1,9 +1,26 @@
 .example-card {
     max-width: 400px;
+    margin-bottom: 8px;
+    margin-top: 10px;
+  }
+  img{
+    padding-left: 140;
+    margin-top: 100;
+    width: 124px;
+    margin-right: 30;
+    margin-left: 100px;
+    margin-bottom: 14px;
+    height: 107px;
+    margin-right: 5px;
+}
+  
+    
+  p{
+      font-weight: bold;
+
   }
   
-  img{
-      padding-left: 140px;
-      max-width: 400px;
-  margin-bottom: 8px;
-  }
+  .mat-card {
+    background: beige;
+    color: rgba(0,0,0,.87);
+}

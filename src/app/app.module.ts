@@ -9,7 +9,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatListModule } from '@angular/material/list';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatCardModule} from '@angular/material/card';
-import { RecipeDetailsComponent } from './recipe-details/recipe-details.component';
+import { RecipesComponent} from './recipes/recipes.component';
+import { RecipesdetailsComponent } from './recipesdetails/recipesdetails.component';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatIconModule} from '@angular/material/icon';
+
 
 
 
@@ -18,7 +22,9 @@ import { RecipeDetailsComponent } from './recipe-details/recipe-details.componen
     AppComponent,
     HeaderComponent,
     ListOfRecipeComponent,
-    RecipeDetailsComponent
+    RecipesComponent,
+    RecipesdetailsComponent
+  
   ],
 
   imports: [
@@ -29,6 +35,10 @@ import { RecipeDetailsComponent } from './recipe-details/recipe-details.componen
     MatListModule,
     MatTabsModule,
     MatCardModule,
+    MatGridListModule,
+    MatIconModule
+    
+    
     
   ],
   providers: [],

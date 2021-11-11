@@ -1,0 +1,71 @@
+<div class="details" *ngFor="let details of selectRecipe">
+<mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>{{details.name1}}</mat-card-title>
+      <mat-card-subtitle>{{details.chefName}}</mat-card-subtitle>
+      <table>
+        <tr>
+          <th><mat-icon class="icon" title="Preparation Time" style="font-size:20px"> alarm </mat-icon>{{details.preparationTime}}</th>
+          <th><mat-icon class="dining"  title="cooking" style="font-size:20px"> local_dining</mat-icon>{{details.cooking}}</th>
+          <th><mat-icon class="people" title="number of people" style="font-size:20px">people</mat-icon>{{ details.NumberOfPeoples}}</th>
+        </tr>
+      </table>
+       
+      
+    </mat-card-header>
+     
+  </mat-card>
+
+
+ <mat-card class="example-card">
+    <mat-card-title>Ingredients</mat-card-title>
+    <table style="width:100%">
+        <tr>
+          <td>
+            <ul>
+                   <li class="content" *ngFor="let content of details['ingredients']">
+        
+                      {{content.name}},
+                      {{content.quantity}},
+                      {{content.unit}}
+                
+                   </li>
+        
+             </ul>
+          </td>
+          <td>
+              <img mat-card-image src="{{details.path}}">
+            </td>
+          
+        </tr>
+    </table>
+   
+ </mat-card>
+<mat-card class="example-card" >
+  
+     
+      <mat-card-title>Recipe</mat-card-title>
+      <ul>
+          <li class="content" *ngFor="let content of details['recipeinfor'] ">
+          {{content.name}}
+          </li>
+
+      </ul>
+    
+    
+  </mat-card>
+
+
+
+  <mat-card class="example-card">
+    
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>paneer butter masala video recipe:
+      </mat-card-title>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/U1LVDFwi8qI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+   
+  </mat-card>
+
+</div>
+

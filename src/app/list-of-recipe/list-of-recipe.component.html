@@ -1,6 +1,8 @@
 <mat-nav-list>
 
-	<a mat-list-item *ngFor="let recipe of recipeList" [routerLink]="['/recipeDetail',recipe.id]">
+	<a mat-list-item *ngFor="let recipe of recipeList" [routerLink]="['/recipes',recipe.id]">
 		<span matLine>{{recipe.label}}</span>  
+		
 	</a>
+	
 </mat-nav-list>
